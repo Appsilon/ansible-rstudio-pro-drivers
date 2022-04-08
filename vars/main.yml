@@ -1,2 +1,11 @@
 # vars file
 ---
+
+rstudio_pro_drivers_downloads_path: /var/lib/ansible/rstudio-pro-drivers/downloads
+rstudio_pro_drivers_machine_map:
+  i686: i386
+  i386: i386
+  x86_64: amd64
+  amd64: amd64
+
+...

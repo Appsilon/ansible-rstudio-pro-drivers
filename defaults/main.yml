@@ -1,2 +1,16 @@
-# defaults file
 ---
+
+rstudio_pro_drivers_version: "2021.10.0"
+rstudio_pro_drivers_dependencies: ["unixodbc", "unixodbc-dev"]
+
+################################################################
+# /opt/rstudio-drivers/snowflake/bin/lib/rstudio.snowflake.ini #
+################################################################
+
+rstudio_pro_driver_snowflake_config:
+  Driver:
+    CABundleFile: cacert.pem
+    LogLevel: 0
+    DisableOSCPCheck: True
+
+...
