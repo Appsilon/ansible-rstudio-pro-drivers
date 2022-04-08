@@ -2,10 +2,10 @@
 ---
 galaxy_info:
   namespace: appsilon
-  role_name: fill_this_in
+  role_name: rstudio_pro_drivers
   author: Appsilon
   company: Appsilon
-  description: fill_this_in
+  description: Install RStudio Pro Drivers
   license: MIT
   min_ansible_version: 2.11.1
   platforms:
