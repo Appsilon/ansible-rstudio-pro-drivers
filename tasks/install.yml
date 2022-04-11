@@ -1,6 +1,6 @@
 ---
 
-- name: install | create (download) directory
+- name: install pro-drivers | create download directory
   ansible.builtin.file:
     path: "{{ rstudio_pro_drivers_downloads_path }}"
     state: directory

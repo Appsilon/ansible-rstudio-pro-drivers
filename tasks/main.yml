@@ -6,13 +6,12 @@
     - "_{{ ansible_distribution_release }}.yml"
     - "_{{ ansible_distribution | lower }}.yml"
     - _default.yml
+  tags: always
 
 - include: install.yml
-  tags:
-    - include
+  tags: install
 
 - include: configure.yml
-  tags:
-    - configure
+  tags: configure
 
 ...
