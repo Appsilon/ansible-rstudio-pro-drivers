@@ -25,6 +25,6 @@
 
 - name: install pro-drivers | install deb
   ansible.builtin.apt:
-    deb: "{{ rstudio_pro_drivers_downloads_path }}/rstudio-drivers_{{ rstudio_pro_drivers_version }}_{{ rstudio_machine_map[ansible_machine] }}.deb"
+    deb: "{{ rstudio_pro_drivers_downloads_path }}/rstudio-drivers_{{ rstudio_pro_drivers_version }}_{{ rstudio_pro_drivers_machine_map[ansible_machine] }}.deb"
 
 ...
