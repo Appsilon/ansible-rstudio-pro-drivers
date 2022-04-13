@@ -18,7 +18,7 @@
 - name: install pro-drivers | download deb
   ansible.builtin.get_url:
     url: "{{ rstudio_pro_drivers_download_url }}"
-    dest: "{{ rstudio_pro_drivers_downloads_path }}/rstudio-drivers_{{ rstudio_pro_drivers_version }}_{{ rstudio_machine_map[ansible_machine] }}.deb"
+    dest: "{{ rstudio_pro_drivers_downloads_path }}/rstudio-drivers_{{ rstudio_pro_drivers_version }}_{{ rstudio_pro_drivers_machine_map[ansible_machine] }}.deb"
     mode: 0644
     owner: root
     group: root
