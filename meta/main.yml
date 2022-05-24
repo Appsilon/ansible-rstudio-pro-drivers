@@ -1,9 +1,8 @@
 # meta file
 ---
 galaxy_info:
-  namespace: appsilon
   role_name: rstudio_pro_drivers
-  author: Appsilon
+  author: appsilon
   company: Appsilon
   description: Install RStudio Pro Drivers
   license: MIT
