@@ -1,6 +1,16 @@
 ---
 
+# @var rstudio_pro_drivers_version:description: >
+# Version of Posit/RStudio Professional Drivers.
+#
+# Release notes: https://docs.posit.co/pro-drivers/documentation/
+# @end
 rstudio_pro_drivers_version: "2021.10.0"
+
+# @var rstudio_pro_drivers_dependencies:description: >
+# System dependecies required for using Drivers on Debian/Ubuntu 
+# ([Posit/RStudio docs](https://docs.posit.co/pro-drivers/workbench-connect/#step-1-install-dependencies))
+# @end
 rstudio_pro_drivers_dependencies: ["unixodbc", "unixodbc-dev"]
 
 ################################################################

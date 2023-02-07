@@ -1,0 +1,5 @@
+---
+exclude_tags:
+  - always
+  - configure
+  - install
