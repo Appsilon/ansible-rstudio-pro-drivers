@@ -6,6 +6,7 @@ exclude_paths:
   - .cache/
   - molecule/default
   - .env
+  - venv
 offline: false
 use_default_rules: true
 parseable: true
