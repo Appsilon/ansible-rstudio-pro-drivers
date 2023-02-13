@@ -5,6 +5,7 @@ exclude_paths:
   - .github/
   - .cache/
   - molecule/default
+  - .env
 offline: false
 use_default_rules: true
 parseable: true
