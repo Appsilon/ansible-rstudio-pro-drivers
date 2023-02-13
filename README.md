@@ -29,7 +29,7 @@ rstudio_pro_drivers_dependencies: [unixodbc, unixodbc-dev]
 
 Version of Posit/RStudio Professional Drivers.
 
-Release notes: https://docs.posit.co/pro-drivers/documentation/
+Release notes: <https://docs.posit.co/pro-drivers/documentation/>
 
 #### Default value
 
