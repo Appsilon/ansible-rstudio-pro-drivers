@@ -1,29 +1,52 @@
-Role Name
-=========
+# ansible-rstudio-pro-drivers
 
-A brief description of the role goes here.
+Install Posit/RStudio Professional Drivers
 
-[![CI](https://github.com/Appsilon/ansible-rstudio-pro-drivers/workflows/CI/badge.svg)](https://github.com/Appsilon/ansible-rstudio-pro-drivers/actions/workflows/ci.yml)
-[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-appsilon.rstudio_pro_drivers-blue.svg)](https://galaxy.ansible.com/appsilon/rstudio_pro_drivers/)
+## Table of content
 
-Example Playbook
-----------------
+- [Default Variables](#default-variables)
+  - [rstudio_pro_drivers_dependencies](#rstudio_pro_drivers_dependencies)
+  - [rstudio_pro_drivers_version](#rstudio_pro_drivers_version)
+- [Dependencies](#dependencies)
+- [License](#license)
+- [Author](#author)
 
-Including an example of how to use your role (for instance, with variables
-passed in as parameters) is always nice for users too:
+---
 
-```yaml
-- hosts: all
-  roles:
-     - ansible-rstudio-pro-drivers
+## Default Variables
+
+### rstudio_pro_drivers_dependencies
+
+System dependecies required for using Drivers on Debian/Ubuntu ([Posit/RStudio docs](https://docs.posit.co/pro-drivers/workbench-connect/#step-1-install-dependencies))
+
+#### Default value
+
+```YAML
+rstudio_pro_drivers_dependencies: [unixodbc, unixodbc-dev]
 ```
 
-License
--------
+### rstudio_pro_drivers_version
+
+Version of Posit/RStudio Professional Drivers.
+
+Release notes: <https://docs.posit.co/pro-drivers/documentation/>
+
+#### Default value
+
+```YAML
+rstudio_pro_drivers_version: 2021.10.0
+```
+
+
+
+## Dependencies
+
+None.
+
+## License
 
 MIT
 
-Author Information
-------------------
+## Author
 
-[`Appsilon`](https://appsilon.com/)
+appsilon

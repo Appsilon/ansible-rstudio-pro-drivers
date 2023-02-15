@@ -4,7 +4,7 @@ galaxy_info:
   role_name: rstudio_pro_drivers
   author: appsilon
   company: Appsilon
-  description: Install RStudio Pro Drivers
+  description: Install Posit/RStudio Professional Drivers
   license: MIT
   min_ansible_version: 2.11.1
   platforms:
