@@ -16,6 +16,7 @@
     owner: root
     group: root
     mode: 0755
+  tags: install
 
 - name: Include install
   ansible.builtin.include_tasks: "{{ ansible_os_family | lower }}/main.yml"
