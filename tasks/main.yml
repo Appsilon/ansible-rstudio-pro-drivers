@@ -1,17 +1,29 @@
 ---
 
-- name: include variables
+- name: Include variables
   ansible.builtin.include_vars: "{{ item }}"
   with_first_found:
     - "_{{ ansible_distribution_release }}.yml"
+    - "_{{ (ansible_distribution + '-' + ansible_distribution_major_version) | lower }}.yml"
     - "_{{ ansible_distribution | lower }}.yml"
     - _default.yml
   tags: always
 
-- include: install.yml
+- name: Install pro-drivers | create download directory
+  ansible.builtin.file:
+    path: "{{ rstudio_pro_drivers_downloads_path }}"
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
   tags: install
 
-- include: configure.yml
+- name: Include install
+  ansible.builtin.include_tasks: "{{ ansible_os_family | lower }}/main.yml"
+  tags: install
+
+- name: Include configure
+  ansible.builtin.include_tasks: configure.yml
   tags: configure
 
 ...

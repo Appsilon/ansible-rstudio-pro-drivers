@@ -1,21 +1,13 @@
 ---
 
-- name: install pro-drivers | create download directory
-  ansible.builtin.file:
-    path: "{{ rstudio_pro_drivers_downloads_path }}"
-    state: directory
-    owner: root
-    group: root
-    mode: 0755
-
-- name: install pro-drivers | install dependencies
+- name: Install pro-drivers | install dependencies
   ansible.builtin.apt:
     name: "{{ rstudio_pro_drivers_dependencies }}"
     state: "{{ apt_install_state | default('latest') }}"
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
 
-- name: install pro-drivers | download deb
+- name: Install pro-drivers | download deb
   ansible.builtin.get_url:
     url: "{{ rstudio_pro_drivers_download_url }}"
     dest: "{{ rstudio_pro_drivers_downloads_path }}/rstudio-drivers_{{ rstudio_pro_drivers_version }}_{{ rstudio_pro_drivers_machine_map[ansible_machine] }}.deb"
@@ -23,8 +15,6 @@
     owner: root
     group: root
 
-- name: install pro-drivers | install deb
+- name: Install pro-drivers | install deb
   ansible.builtin.apt:
     deb: "{{ rstudio_pro_drivers_downloads_path }}/rstudio-drivers_{{ rstudio_pro_drivers_version }}_{{ rstudio_pro_drivers_machine_map[ansible_machine] }}.deb"
-
-...
