@@ -3,4 +3,4 @@
   hosts: all
   tasks:
     - name: include tasks
-      include: "{{ playbook_dir }}/../../tests/tasks/post.yml"
+      import_tasks: "{{ playbook_dir }}/../../tests/tasks/post.yml"
