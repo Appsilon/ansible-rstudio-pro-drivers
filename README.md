@@ -34,7 +34,7 @@ Release notes: <https://docs.posit.co/pro-drivers/documentation/>
 #### Default value
 
 ```YAML
-rstudio_pro_drivers_version: 2021.10.0
+rstudio_pro_drivers_version: 2023.12.1
 ```
 
 
