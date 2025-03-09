@@ -15,4 +15,5 @@
 - name: Install pro-drivers | install rpm
   ansible.builtin.yum:
     name: "{{ rstudio_pro_drivers_downloads_path }}/rstudio-drivers_{{ rstudio_pro_drivers_version }}.rpm"
+    state: present
     disable_gpg_check: true
