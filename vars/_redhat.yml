@@ -1,5 +1,4 @@
 ---
-
 rstudio_pro_drivers_dependencies:
   - unixODBC
   - unixODBC-devel
