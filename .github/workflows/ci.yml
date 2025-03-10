@@ -43,10 +43,11 @@ jobs:
       matrix:
         include:
           - distro: ubuntu2004
-            ansible-version: '>=2.11.5'
+            platform: instance
           - distro: ubuntu2204
-            ansible-version: '>=2.11.5'
+            platform: instance
           - distro: ubi9
+            platform: instance-rh
 
     steps:
       - name: Check out the codebase
