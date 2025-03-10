@@ -20,7 +20,6 @@ platforms:
     command: "/usr/sbin/init"
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
-    privileged: true
     cgroupns_mode: host
 provisioner:
   name: ansible
