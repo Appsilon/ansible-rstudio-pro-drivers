@@ -1,9 +1,8 @@
 ---
-
 rstudio_pro_drivers_dependencies:
   - unixODBC
   - unixODBC-devel
 
 rstudio_pro_drivers_version_dash_number: "-1"
 
-rstudio_pro_drivers_download_url: "https://cdn.rstudio.com/drivers/7C152C12/installer/rstudio-drivers-{{ rstudio_pro_drivers_version }}{{ rstudio_pro_drivers_version_dash_number }}.el7.x86_64.rpm"
+rstudio_pro_drivers_download_url: "https://cdn.rstudio.com/drivers/7C152C12/installer/rstudio-drivers-{{ rstudio_pro_drivers_version }}{{ rstudio_pro_drivers_version_dash_number }}.el.x86_64.rpm"

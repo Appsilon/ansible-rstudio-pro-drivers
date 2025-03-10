@@ -1,6 +1,6 @@
 ---
 
-- name: configure pro-drivers | create odbcinst.ini
+- name: Configure pro-drivers | Create odbcinst.ini
   ansible.builtin.copy:
     src: /opt/rstudio-drivers/odbcinst.ini.sample
     dest: /etc/odbcinst.ini
@@ -9,7 +9,7 @@
     group: root
     remote_src: true
 
-- name: configure pro-drivers | create rstudio.snowflakeodbc.ini
+- name: Configure pro-drivers | Create rstudio.snowflakeodbc.ini
   ansible.builtin.template:
     src: config/rstudio.snowflake.ini.j2
     dest: /opt/rstudio-drivers/snowflake/bin/lib/rstudio.snowflake.ini

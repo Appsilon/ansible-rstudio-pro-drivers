@@ -1,6 +1,6 @@
 ---
 - name: Install pro-drivers | install dependencies
-  ansible.builtin.yum:
+  ansible.builtin.dnf:
     name: "{{ rstudio_pro_drivers_dependencies }}"
     state: "{{ yum_install_state | default('latest') }}"
 
@@ -13,6 +13,7 @@
     group: root
 
 - name: Install pro-drivers | install rpm
-  ansible.builtin.yum:
+  ansible.builtin.dnf:
     name: "{{ rstudio_pro_drivers_downloads_path }}/rstudio-drivers_{{ rstudio_pro_drivers_version }}.rpm"
+    state: present
     disable_gpg_check: true
