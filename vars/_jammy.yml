@@ -1,3 +1,0 @@
----
-
-rstudio_pro_drivers_download_url: "https://dl.posit.co/public/pro/deb/ubuntu/pool/focal/main/r/rs/rstudio-drivers_{{ rstudio_pro_drivers_version }}/rstudio-drivers_{{ rstudio_pro_drivers_version }}_{{ rstudio_pro_drivers_machine_map[ansible_machine] }}.deb"
