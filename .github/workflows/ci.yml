@@ -46,6 +46,8 @@ jobs:
             platform: instance
           - distro: ubuntu2204
             platform: instance
+          - distro: ubuntu2404
+            platform: instance
           - distro: ubi9
             platform: instance-rh
 
