@@ -5,7 +5,7 @@
 #
 # Release notes: <https://docs.posit.co/pro-drivers/documentation/>
 # @end
-rstudio_pro_drivers_version: "2023.12.1"
+rstudio_pro_drivers_version: "2025.03.0"
 
 # @var rstudio_pro_drivers_dependencies:description: >
 # System dependecies required for using Drivers on Debian/Ubuntu
